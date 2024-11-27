@@ -52,11 +52,12 @@ export default function NavBar({ sectionRefs }) {
   return (
     <header
       ref={navBar}
-      className="fixed top-0 z-50 flex w-full -translate-y-full items-center justify-between bg-secondary-100 px-5 py-3"
+      className="fixed top-0 z-50 flex items-center justify-between w-full px-5 py-3 -translate-y-full bg-secondary-100"
     >
       {/* logo */}
+      <div className="text-2xl font-extrabold font-Orbitron">Manoj-<span className="text-2xl font-extrabold text-green-800">X</span> </div>
       <a href="#hero" aria-label="Logo" className="z-50">
-        <svg
+        {/* <svg
           ref={logo}
           width="80"
           height="45"
@@ -70,24 +71,24 @@ export default function NavBar({ sectionRefs }) {
             clipRule="evenodd"
             d="M113.5 1.5H111V6.50001H113.5C112.119 6.50001 111 7.61931 111 9.00001V11.5H116V9.00001C116 10.3807 117.119 11.5 118.5 11.5H121V6.50001H118.5C119.881 6.50001 121 5.38072 121 4V1.5H116V4C116 2.61929 114.881 1.5 113.5 1.5ZM116 6.50001H113.5C114.881 6.50001 116 7.61931 116 9.00001V6.50001ZM116 6.50001V4C116 5.38072 117.119 6.50001 118.5 6.50001H116Z"
           />
-        </svg>
+        </svg> */}
       </a>
       <nav className=" space-x-7 font-grotesk text-body-3 sm:block">
-        <a href="#about" className="group relative hidden md:inline-block">
+        <a href="#about" className="relative hidden group md:inline-block">
           <span>about</span>
           <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
         </a>
-        <a href="#services" className="group relative hidden md:inline-block">
+        <a href="#services" className="relative hidden group md:inline-block">
           <span>services</span>
           <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
         </a>
-        <a href="#works" className="group relative hidden md:inline-block">
+        <a href="#works" className="relative hidden group md:inline-block">
           <span>projects</span>
           <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
         </a>
         <a
           ref={cta}
-          className="button group relative hover:bg-transparent"
+          className="relative button group hover:bg-transparent"
           href="#contact"
         >
           <span className="relative w-fit">
