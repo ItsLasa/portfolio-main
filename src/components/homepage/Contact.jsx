@@ -43,12 +43,12 @@ export default function Contact() {
       
       
       <Heading title="Contact" />
-      <div ref={contactSection} className="mt-10 flex flex-col gap-20 md:grid md:grid-cols-6 md:px-12">
+      <div ref={contactSection} className="flex flex-col gap-20 mt-10 md:grid md:grid-cols-6 md:px-12">
         <div className="col-span-4">
-          <h3 ref={heading} className="max-w-lg 2xl:max-w-3xl text-heading-3 2xl:text-7xl font-semibold leading-tight translate-y-10 opacity-0">
+          <h3 ref={heading} className="max-w-lg font-semibold leading-tight translate-y-10 opacity-0 2xl:max-w-3xl text-heading-3 2xl:text-7xl">
             Have an awesome idea? Let&apos;s bring it to life.
           </h3>
-          <p ref={body} className="mt-4 max-w-md 2xl:max-w-2xl text-body-2 2xl:text-4xl text-accent-100 translate-y-10 opacity-0">
+          <p ref={body} className="max-w-md mt-4 translate-y-10 opacity-0 2xl:max-w-2xl text-body-2 2xl:text-4xl text-accent-100">
             I am currently not available for freelance work. I am accepting new projects starting from February 2022.
           </p>
           <form
@@ -112,10 +112,10 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="button group mt-10 border duration-200 hover:border-accent-400 hover:bg-transparent"
+              className="mt-10 duration-200 border button group hover:border-accent-400 hover:bg-transparent"
             >
               <span className="relative">
-                <span className="absolute bottom-2 h-1 w-0 bg-secondary-700 opacity-90 duration-300 ease-out group-hover:w-full"></span>
+                <span className="absolute w-0 h-1 duration-300 ease-out bottom-2 bg-secondary-700 opacity-90 "></span>
                 <span className="group-hover:text-accent-400">
                   Send Message
                 </span>
@@ -123,28 +123,28 @@ export default function Contact() {
             </button>
           </form>
         </div>
-        <div className="col-span-2 grid grid-cols-1 gap-x-4 gap-y-8 text-accent-300 sm:grid-cols-2 sm:gap-y-0 md:grid-cols-1">
+        <div className="grid grid-cols-1 col-span-2 gap-x-4 gap-y-8 text-accent-300 sm:grid-cols-2 sm:gap-y-0 md:grid-cols-1">
           <div className="space-y-3 ">
-            <h4 className="text-body-1 2xl:text-4xl font-semibold">Contact Details</h4>
+            <h4 className="font-semibold text-body-1 2xl:text-4xl">Contact Details</h4>
             <div className="flex flex-col space-y-3 text-body-2 2xl:text-3xl">
               <a
                 href="mailto:hello@huyng.xyz"
-                className="group relative w-fit cursor-pointer"
+                className="relative cursor-pointer group w-fit"
                 target="_blank"
                 rel="noreferrer"
               >
-                <span>hello@huyng.xyz</span>
+                <span>Manojlasantha306@gmail.com</span>
                 <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
               </a>
              
             </div>
           </div>
           <div className="space-y-3 ">
-            <h4 className="text-body-1 2xl:text-4xl font-semibold">My Digital Spaces</h4>
-            <div className="space-y-3 text-body-2 2xl:text-3xl">
-              <a
+            <h4 className="font-semibold text-body-1 2xl:text-4xl">My Digital Spaces</h4>
+            <div className="space-y-3 text-body-2 2xl:text-3xl ">
+              {/* <a
                 href="https://bento.me/huyng"
-                className="group flex items-center space-x-2"
+                className="flex items-center space-x-2 group"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -153,10 +153,10 @@ export default function Contact() {
                   <span>Bento</span>
                   <span className="absolute bottom-0 left-0 h-[0.10em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
                 </div>
-              </a>
+              </a> */}
               <a
-                href="https://github.com/huyngxyz"
-                className="group flex items-center space-x-2"
+                href="https://github.com/ItsLasa"
+                className="flex items-center space-x-2 group"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -167,8 +167,8 @@ export default function Contact() {
                 </div>
               </a>
               <a
-                href="https://www.linkedin.com/in/huyng03/"
-                className="group group flex w-fit items-center space-x-2"
+                href="https://www.linkedin.com/in/manoj-illangasinghe/"
+                className="flex items-center space-x-2 group w-fit"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -178,9 +178,9 @@ export default function Contact() {
                   <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
                 </div>
               </a>
-              <a
+              {/* <a
                 href="https://www.youtube.com/channel/UCBOAB9RV647G93GxLhEXleA"
-                className="group flex items-center space-x-2"
+                className="flex items-center space-x-2 group"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -189,14 +189,14 @@ export default function Contact() {
                   <span>YouTube</span>
                   <span className="absolute bottom-0 left-0 h-[0.10em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
                 </div>
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="space-y-3 ">
-            <h4 className="text-body-1 font-semibold 2xl:text-4xl">Location</h4>
+            <h4 className="font-semibold text-body-1 2xl:text-4xl">Location</h4>
             <div className="space-y-2 text-body-2 2xl:text-3xl">
-              <p>
-                Melbourne, Australia <br></br>
+              <p className="">
+                Sri Lanka, Dambulla <br></br>
                 {time}
               </p>
             </div>
