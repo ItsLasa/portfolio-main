@@ -7,6 +7,7 @@ export default {
   theme: {
     
     extend: {
+      
       screens: {
         'md2': '872px'
       },
@@ -28,6 +29,11 @@ export default {
       fontFamily: {
         'general': ['GeneralSans-Variable', 'sans-serif'],
         'grotesk': ['CabinetGrotesk-Variable', 'sans-serif'],
+        'Cinzel': ["Cinzel", "sans-serif"],
+        'Orbitron': [ "Orbitron",' sans-serif'],
+        'Nabla': [ "Nabla", 'system-ui'],
+        'DotGothic16': [ "DotGothic16",'sans-serif'],
+   
       },
       colors: {
         'transparent': 'transparent',
