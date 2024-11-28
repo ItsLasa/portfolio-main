@@ -1,4 +1,4 @@
-import ibgroup from "/src/assets/images/ib-group-desktop.webp";
+import ibgroup from "/src/assets/images/image.png";
 import memento from "/src/assets/images/memento-desktop.webp";
 import acc from "/src/assets/images/acc-square.webp";
 import daddy from "/src/assets/images/godaddy-desktop.webp";
@@ -13,18 +13,18 @@ export default function Works({ forwardedRef }) {
       id="works"
       className="nav-change overflow-hidden my-[10%]"
     >
-     <Heading title="Projects" />
-      <div className="mt-10 grid grid-cols-1 gap-16 gap-y-10 md:grid-cols-12">
+     <Heading className="font-Nabla"  title="Projects" />
+      <div className="grid grid-cols-1 gap-16 mt-10 gap-y-10 md:grid-cols-12">
         {/* Project #1 */}
-        <div className=" col-span-1 md:col-span-12">
+        <div className="col-span-1 md:col-span-12">
           <Projects
             link="https://musical-stroopwafel-1c2327.netlify.app/landing.html"
             img={ibgroup}
-            alt="IBGroup vietnam website mockup"
-            name="ibgroup vietnam website"
-            type="Web Design • Frontend Development"
+            alt="Farm To Market Food Web"
+            name="Farm To Market Food Web"
+            type="Web Design • FullStack Development • AI Powered "
             year="2023"
-            tools="HTML • TailwindCSS • JavaScript • Figma"
+            tools="NextJs • TailwindCSS • Figma • Stripe • Sanity"
 
           />
         </div>
@@ -51,7 +51,7 @@ export default function Works({ forwardedRef }) {
             tools="HTML • CSS • JavaScript • Figma"
           />
         </div>
-        <div className="col-span-1 h-fit pt-0 md:col-span-8 md:pt-20">
+        <div className="col-span-1 pt-0 h-fit md:col-span-8 md:pt-20">
           <Projects
             link="https://godaddyuiclone.netlify.app"
             img={daddy}
