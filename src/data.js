@@ -7,8 +7,8 @@ import sunnyside from '/src/assets/images/sunny-side-square.webp';
 
 const projectsData = [
   {
-    title: 'IB Group Vietnam Website',
-    description: 'Web Design / Frontend Development',
+    title: 'Farm To Market Food Web',
+    description: 'Web Design / FullStack Development / AI Powered',
     imageSrc: ibgroup,
     link: 'https://musical-stroopwafel-1c2327.netlify.app/landing.html'
   },
