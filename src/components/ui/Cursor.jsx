@@ -1,44 +1,61 @@
 import { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 
-export default function Cursor() {
+export default function CustomCursor() {
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
-  const curs = useRef(null);
-  const svg = useRef(null);
+  const cursorRef = useRef(null);
+  const svgRef = useRef(null);
 
   useEffect(() => {
-    // TODO Learn useContext and useRef here
-    const images = document.querySelectorAll(".img");
+    const hoverTargets = document.querySelectorAll(".hover-target");
 
-    const tl = gsap.timeline({ paused: true });
+    // GSAP timeline for hover effects
+    const hoverTimeline = gsap.timeline({ paused: true });
 
-    tl.to(curs.current, { height: "112px", width:"112px", ease: "expo.inout" }).to(
-      svg.current,
-      { opacity: 1, width: "96px", height:"96px" },
-      0
-    );
+    hoverTimeline
+      .to(cursorRef.current, {
+        height: "112px",
+        width: "112px",
+        ease: "expo.inOut",
+        duration: 0.3,
+      })
+      .to(
+        svgRef.current,
+        {
+          opacity: 1,
+          width: "96px",
+          height: "96px",
+          ease: "expo.inOut",
+          duration: 0.3,
+        },
+        0
+      );
 
-    images.forEach((img) => {
-      img.addEventListener("mouseenter", function () {
-        tl.play();
-      });
-
-      img.addEventListener("mouseleave", function () {
-        tl.reverse();
-        tl.eventCallback("onReverseComplete", function () {
-          gsap.set(svg.current, { opacity: 0 }); // Hide the SVG element
-          gsap.set(curs.current, { height: "12px", width:"12px" }); // Hide the SVG element
+    // Add hover animations
+    hoverTargets.forEach((target) => {
+      target.addEventListener("mouseenter", () => hoverTimeline.play());
+      target.addEventListener("mouseleave", () => {
+        hoverTimeline.reverse();
+        hoverTimeline.eventCallback("onReverseComplete", () => {
+          gsap.set(svgRef.current, { opacity: 0 });
+          gsap.set(cursorRef.current, { height: "12px", width: "12px" });
         });
       });
     });
 
-    function moveCursor(e) {
+    // Track mouse movement
+    const handleMouseMove = (e) => {
       setCursor({ x: e.clientX, y: e.clientY });
-    }
-    document.addEventListener("mousemove", moveCursor);
+    };
+    document.addEventListener("mousemove", handleMouseMove);
 
     return () => {
-      document.removeEventListener("mousemove", moveCursor);
+      // Cleanup listeners
+      document.removeEventListener("mousemove", handleMouseMove);
+      hoverTargets.forEach((target) => {
+        target.removeEventListener("mouseenter", () => hoverTimeline.play());
+        target.removeEventListener("mouseleave", () => hoverTimeline.reverse());
+      });
     };
   }, []);
 
@@ -46,14 +63,14 @@ export default function Cursor() {
 
   return (
     <div
-      ref={curs}
-      className="cursor pointer-events-none fixed left-1/2 top-1/2 z-[999] hidden h-3 w-3 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-secondary-600 sm:flex"
+      ref={cursorRef}
+      className="fixed top-0 left-0 z-50 w-3 h-3 transform -translate-x-1/2 -translate-y-1/2 bg-black rounded-full pointer-events-none cursor opacity-80"
       style={{ left: `${x}px`, top: `${y}px` }}
     >
       <svg
-        ref={svg}
+        ref={svgRef}
         xmlns="http://www.w3.org/2000/svg"
-        className="scale-50 opacity-0"
+        className="opacity-0"
         width="24"
         height="24"
         viewBox="0 0 24 24"
