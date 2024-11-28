@@ -1,6 +1,8 @@
 import { gsap } from "gsap";
 import { useRef, useEffect } from "react";
-import heroImg from "/src/assets/images/heroimg.webp";
+import heroImg from "/src/assets/images/bg3.jpg";
+import { FlipWordsDemo } from "../flipWord";
+import { AnimatedTooltipPreview } from "../AnimatedTooltipPreview";
 
 export default function Hero() {
   const img = useRef(null);
@@ -45,9 +47,13 @@ export default function Hero() {
           </h1> */}
         </div>
         <div className=" title 2xl:py-16">
+          
         <h1 ref={(el) => (titles.current[1] = el)} className="overflow-visible translate-y-96">
-            Hey, I&apos;m Manoj 
+          
+           <FlipWordsDemo>  Hey, I&apos;m Manoj </FlipWordsDemo>
+           
           </h1>
+          
         </div>
         <div className=" title 2xl:py-16">
           {/* <h1 ref={(el) => (titles.current[2] = el)} className="translate-y-96">
