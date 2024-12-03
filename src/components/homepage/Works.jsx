@@ -18,7 +18,7 @@ export default function Works({ forwardedRef }) {
         {/* Project #1 */}
         <div className="col-span-1 md:col-span-12">
           <Projects
-            link="https://musical-stroopwafel-1c2327.netlify.app/landing.html"
+            link="https://github.com/ItsLasa/app_farm"
             img={ibgroup}
             alt="Farm To Market Food Web"
             name="Farm To Market Food Web"
