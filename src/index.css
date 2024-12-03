@@ -1,9 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Orbitron:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Nabla&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DotGothic16&family=Kaushan+Script&family=Nabla&family=Orbitron:wght@400..900&family=Shadows+Into+Light+Two&display=swap');
+
+
 @tailwind base;@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DotGothic16&family=Nabla&family=Orbitron:wght@400..900&display=swap');
 @tailwind components;
 @tailwind utilities;
+
 
 
 
@@ -97,6 +101,7 @@
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
   }
 }
+
 ::-webkit-scrollbar {
   width: 7px; /* Width of the scrollbar */
 }
@@ -121,19 +126,3 @@
   scrollbar-color: #000000 #f1f1f1; /* Thumb color and track color */
  
 }
-
-body {
-  cursor: none; /* Hide default cursor */
-}
-
-/* Additional styles for the cursor */
-.cursor {
-  position: fixed;
-  border-radius: 50%;
-  background-color: rgb(73, 73, 73);
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 50;
-  transition: width 0.2s ease, height 0.2s ease, opacity 0.2s ease;
-}
-
