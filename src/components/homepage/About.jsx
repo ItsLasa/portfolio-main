@@ -3,6 +3,7 @@ import profileImg from "/src/assets/images/me.jpg";
 import { ScrollTrigger } from "gsap/all";
 import { gsap } from "gsap";
 import Heading from "../ui/Heading";
+import { AnimatedTooltipPreview } from "../AnimatedTooltipPreview";
 
 export default function About() {
   const profile = useRef(null);
@@ -36,6 +37,7 @@ export default function About() {
     // Try using max width to contain the size of the container
     <section ref={aboutSection} aria-label="about me">
       <Heading title="about me" />
+      
       <div className="flex flex-col items-start gap-8 mt-10 md:flex-row lg:gap-10 ">
         <div className="overflow-hidden rounded-md top-28 md:sticky md:w-1/2">
           <img
@@ -56,11 +58,10 @@ export default function About() {
             >
               A brief intro, who am I?
             </h3>
-            <p ref={body} className="translate-y-10 opacity-0  text-body-1 2xl:text-4xl">
-              I am an independent frontend developer, UI/UX designer and creator based in
-              Melbourne, Australia.
+            <p ref={body} className="translate-y-10 opacity-0 text-body-1 2xl:text-4xl">
+            I am an IT undergraduate at the University of Jaffna, pursuing a Bachelor’s degree in Information Communication & Technology with a specialization in Software Engineering. I am passionate about technology and committed to making a positive impact in the world. I thrive on learning new things and taking on challenges that push me to grow. With a strong foundation in IT and a drive to succeed, I am confident in my ability to contribute meaningfully to the tech industry and bring innovative ideas to life.
               <br></br>
-              <br></br>I specialize in crafting elevated, intuitive, and
+              {/* <br></br>I specialize in crafting elevated, intuitive, and
               minimalistic designs for startups and small businesses to help
               them stand out in the digital landscape with a powerful impact. 😎
               <br></br>
@@ -72,7 +73,7 @@ export default function About() {
                 href="https://www.youtube.com/channel/UCBOAB9RV647G93GxLhEXleA"
               >
                 YouTube 📸
-              </a>
+              </a> */}
             </p>
           </div>
         </div>
