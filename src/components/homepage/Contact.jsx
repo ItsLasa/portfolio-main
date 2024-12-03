@@ -161,8 +161,8 @@ export default function Contact() {
                 rel="noreferrer"
               >
                 <Icon icon="mdi:github" color="#666" />
-                <div className="relative">
-                  <span>Github</span>
+                <div className="relative ">
+                  <span className="">Github</span>
                   <span className="absolute bottom-0 left-0 h-[0.10em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
                 </div>
               </a>
@@ -197,7 +197,7 @@ export default function Contact() {
             <div className="space-y-2 text-body-2 2xl:text-3xl">
               <p className="">
                 Sri Lanka, Dambulla <br></br>
-                {time}
+                <span className="text-2xl font-semibold">{time}</span>
               </p>
             </div>
           </div>
