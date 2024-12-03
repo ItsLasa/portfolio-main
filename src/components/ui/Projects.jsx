@@ -5,7 +5,7 @@ export default function Projects({ name, img, alt, type, link, year, tools }) {
         target="_blank"
         rel="noreferrer"
         href={link}
-        className="img group inline-block overflow-hidden duration-200 ease-linear hover:rounded-3xl"
+        className="inline-block overflow-hidden duration-200 ease-linear img group hover:rounded-3xl"
       >
         <img
           className="w-screen duration-700 ease-in-out group-hover:scale-105"
@@ -16,16 +16,16 @@ export default function Projects({ name, img, alt, type, link, year, tools }) {
         />
       </a>
       <div className="mt-4">
-        <div className="flex space-x-2 mb-3">
-            <p className="rounded-full bg-transparent border border-secondary-600 flex justify-center items-center px-4 py-1 text-secondary-600 text-body-4 2xl:text-3xl">{year}</p>
-            <p className="rounded-full bg-transparent border border-secondary-600 flex justify-center items-center px-4 py-1 text-secondary-600 text-body-4 2xl:text-3xl">{tools}</p>
+        <div className="flex mb-3 space-x-2">
+            <p className="flex items-center justify-center px-4 py-1 bg-transparent border rounded-full text-zinc-50 border-secondary-600 text-body-4 2xl:text-3xl">{year}</p>
+            <p className="flex items-center justify-center px-4 py-1 bg-transparent border rounded-full text-zinc-50 border-secondary-600 text-body-4 2xl:text-3xl">{tools}</p>
         </div>
         <div className="2xl:space-y-3">
 
-        <h3 className="text-works-title 2xl:text-5xl font-medium uppercase text-primary-200">
+        <h3 className="font-medium uppercase text-works-title 2xl:text-5xl text-primary-200">
           {name}
         </h3>
-        <p className="text-body-2 2xl:text-4xl font-light text-primary-400">{type}</p>
+        <p className="font-light text-body-2 2xl:text-4xl text-primary-400">{type}</p>
         </div>
       </div>
     </div>
