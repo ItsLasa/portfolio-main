@@ -1,8 +1,9 @@
 import { gsap } from "gsap";
 import { useRef, useEffect } from "react";
-import heroImg from "/src/assets/images/bg3.jpg";
+import heroImg from "/src/assets/images/bg9.jpg";
 import { FlipWordsDemo } from "../flipWord";
 import { AnimatedTooltipPreview } from "../AnimatedTooltipPreview";
+// import { Meteors } from "../MeteorDemo";
 
 export default function Hero() {
   const img = useRef(null);
@@ -28,9 +29,9 @@ export default function Hero() {
       duration: 3.25,
       ease: "power3.inOut",
     })
-      .from(
+      .to(
         img.current,
-        { scale: 2, duration: 3.2, ease: "power4.inOut" },
+        { scale:2, duration: 3.2, ease: "power4.inOut" },
         "-=3.1"
       )
       .to(titles.current, { y: 0, duration: 2, ease: "power4.inOut" }, "-=2.5")
@@ -41,16 +42,22 @@ export default function Hero() {
     <section id="hero" className="relative flex items-center justify-center w-full h-screen select-none hero" aria-label="hero">
       <div className="z-10 flex flex-col  w-full items-center text-title 2xl:text-[10vw] 2xl:space-y-16 font-bold  uppercase text-accent-300">
         <div className="title 2xl:py-16">
+          
           {/* Learn more about useRef */}
           {/* <h1 ref={(el) => (titles.current[0] = el)} className="overflow-visible translate-y-96">
             Hey, I&apos;m Huy
           </h1> */}
         </div>
+   
         <div className=" title 2xl:py-16">
           
-        <h1 ref={(el) => (titles.current[1] = el)} className="overflow-visible translate-y-96">
           
-           <FlipWordsDemo>  Hey, I&apos;m Manoj </FlipWordsDemo>
+        <h1 ref={(el) => (titles.current[1] = el)} className="overflow-visible translate-y-96">
+     
+           <FlipWordsDemo>  Hey, I&apos;m Manoj      <AnimatedTooltipPreview/>
+            
+           </FlipWordsDemo>
+          
            
           </h1>
           
@@ -63,11 +70,12 @@ export default function Hero() {
       </div>
       <div
         ref={imgContainer}
-        className="absolute mx-auto  w-[55%] overflow-hidden rounded-md"
+        className="absolute mx-auto  w-[65%] overflow-hidden rounded-md"
       >
+        
         <img
           ref={img}
-          className=" scale-110 aspect-[11/16] sm:aspect-[5/6] md:aspect-[7/7] rounded-md opacity-50 lg:aspect-[11/9] w-full h-auto"
+          className=" scale-110 object-cover aspect-[11/16] sm:aspect-[5/6] md:aspect-[7/7] rounded-md opacity-60 lg:aspect-[11/9] w-full h-auto"
           src={heroImg}
           alt="Abstract cubic background image."
         />
