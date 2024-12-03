@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import Lenis from "@studio-freight/lenis";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { AnimatedTooltipPreview } from "../AnimatedTooltipPreview";
 
 export default function NavBar({ sectionRefs }) {
   const navBar = useRef(null);
@@ -55,8 +56,10 @@ export default function NavBar({ sectionRefs }) {
       className="fixed top-0 z-50 flex items-center justify-between w-full px-5 py-3 -translate-y-full bg-secondary-100"
     >
       {/* logo */}
-      <div className="text-2xl font-extrabold font-Orbitron">Manoj-<span className="text-2xl font-extrabold text-green-800">X</span> </div>
+   
+      {/* <div className="text-2xl font-extrabold font-Orbitron">Manoj-<span className="text-2xl font-extrabold text-green-800">X</span> </div> */}
       <a href="#hero" aria-label="Logo" className="z-50">
+      <AnimatedTooltipPreview/>
         {/* <svg
           ref={logo}
           width="80"
@@ -92,7 +95,7 @@ export default function NavBar({ sectionRefs }) {
           href="#contact"
         >
           <span className="relative w-fit">
-            <span className="absolute bottom-2 h-[0.15em] w-0 bg-secondary-700 opacity-90 duration-300 ease-out group-hover:w-full"></span>
+            <span className="absolute  bottom-2 h-[0.15em] w-0 bg-zinc-400 opacity-90 duration-300 ease-out group-hover:w-full"></span>
             <span>Let&apos;s Talk.</span>
           </span>
         </a>
