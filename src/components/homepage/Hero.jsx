@@ -54,8 +54,7 @@ export default function Hero() {
           
         <h1 ref={(el) => (titles.current[1] = el)} className="overflow-visible translate-y-96">
      
-           <FlipWordsDemo>  Hey, I&apos;m Manoj      <AnimatedTooltipPreview/>
-            
+           <FlipWordsDemo>  Hey, I&apos;m Manoj                
            </FlipWordsDemo>
           
            
