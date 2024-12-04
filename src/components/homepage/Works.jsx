@@ -1,8 +1,8 @@
 import ibgroup from "/src/assets/images/image.png";
-import memento from "/src/assets/images/memento-desktop.webp";
-import acc from "/src/assets/images/acc-square.webp";
-import daddy from "/src/assets/images/godaddy-desktop.webp";
-import sunnyside from "/src/assets/images/sunnyside-desktop.webp";
+import memento from "/src/assets/images/web2.png";
+import acc from "/src/assets/images/app3.jpg";
+import daddy from "/src/assets/images/app2.png";
+import sunnyside from "/src/assets/images/app4.png";
 import Projects from "../ui/Projects";
 import Heading from "../ui/Heading";
 
@@ -19,12 +19,13 @@ export default function Works({ forwardedRef }) {
         <div className="col-span-1 md:col-span-12">
           <Projects
             link="https://github.com/ItsLasa/app_farm"
-            img={ibgroup}
+            img={ibgroup} //if you need image un comment this and remove video part 
             alt="Farm To Market Food Web"
             name="Farm To Market Food Web"
             type="Web Design • FullStack Development • AI Powered "
             year="2023"
             tools="NextJs • TailwindCSS • Figma • Stripe • Sanity"
+            // video="https://cdn.dribbble.com/userupload/17818157/file/original-7726b4b3d6d821dde34f2247f65ae35d.mp4"
 
           />
         </div>
@@ -52,9 +53,11 @@ export default function Works({ forwardedRef }) {
           />
         </div>
         <div className="col-span-1 pt-0 h-fit md:col-span-8 md:pt-20">
+        
           <Projects
             link="https://godaddyuiclone.netlify.app"
             img={daddy}
+            
             alt="godaddy clone page mockup"
             name="GODADDY LANDING PAGE CLONE"
             type="Frontend Development"
