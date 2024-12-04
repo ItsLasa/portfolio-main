@@ -1,4 +1,4 @@
-export default function Projects({ name, img, alt, type, link, year, tools }) {
+export default function Projects({ name, img, alt, type, link, year, tools ,video}) {
   return (
     <div>
       <a
@@ -7,13 +7,28 @@ export default function Projects({ name, img, alt, type, link, year, tools }) {
         href={link}
         className="inline-block overflow-hidden duration-200 ease-linear img group hover:rounded-3xl"
       >
-        <img
+          {video ? (
+      <video
+        className="w-full h-auto rounded-lg shadow-lg"
+        autoPlay
+        muted
+        loop
+        
+        poster={img} // Optional: Show the image as a poster before playing
+      >
+        <source src={video}  type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    ) : (
+      <img src={img} alt={alt} className="w-full h-auto rounded-lg shadow-lg" />
+    )}
+        {/* <img
           className="w-screen duration-700 ease-in-out group-hover:scale-105"
           src={img}
           alt={alt}
           width="800"
           height="600"
-        />
+        /> */}
       </a>
       <div className="mt-4">
         <div className="flex mb-3 space-x-2">
