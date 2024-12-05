@@ -30,7 +30,6 @@ export default function NavBar({ sectionRefs }) {
     });
   });
 
-
   useEffect(() => {
     sectionRefs.forEach((section) => {
       ScrollTrigger.create({
@@ -47,7 +46,6 @@ export default function NavBar({ sectionRefs }) {
         toggleActions: "restart reverse restart reverse",
       });
     });
-
   });
 
   return (
@@ -56,10 +54,10 @@ export default function NavBar({ sectionRefs }) {
       className="fixed top-0 z-50 flex items-center justify-between w-full px-5 py-3 -translate-y-full bg-secondary-100"
     >
       {/* logo */}
-   
+
       {/* <div className="text-2xl font-extrabold font-Orbitron">Manoj-<span className="text-2xl font-extrabold text-green-800">X</span> </div> */}
       <a href="#hero" aria-label="Logo" className="z-50">
-      <AnimatedTooltipPreview/>
+        <AnimatedTooltipPreview />
         {/* <svg
           ref={logo}
           width="80"
@@ -76,30 +74,46 @@ export default function NavBar({ sectionRefs }) {
           />
         </svg> */}
       </a>
-      <nav className=" space-x-7 font-grotesk text-body-3 sm:block">
-        <a href="#about" className="relative hidden group md:inline-block">
-          <span>about</span>
-          <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
-        </a>
-        <a href="#services" className="relative hidden group md:inline-block">
-          <span>services</span>
-          <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
-        </a>
-        <a href="#works" className="relative hidden group md:inline-block">
-          <span>projects</span>
-          <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
-        </a>
-        <a
-          ref={cta}
-          className="relative button group hover:bg-transparent"
-          href="#contact"
-        >
-          <span className="relative w-fit">
-            <span className="absolute  bottom-2 h-[0.15em] w-0 bg-zinc-400 opacity-90 duration-300 ease-out group-hover:w-full"></span>
-            <span>Let&apos;s Talk.</span>
-          </span>
-        </a>
-      </nav>
+      <nav className="space-x-7 font-grotesk text-body-3 sm:block">
+  <a href="#about" className="relative hidden group md:inline-block">
+    <span>about</span>
+    <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+  </a>
+
+  <a href="#services" className="relative hidden group md:inline-block">
+    <span>services</span>
+    <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+  </a>
+  
+  <a href="#works" className="relative hidden group md:inline-block">
+    <span>projects</span>
+    <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+  </a>
+  
+  <a
+    href="/My-CV.pdf"
+    className="relative hidden transition-all duration-300 text-emreld-700 animate-bounce group md:inline-block"
+    download="My-CV.pdf"
+    style={{ backgroundColor: 'transparent' }}
+  >
+    <span>resume</span>
+    <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-zinc-600 duration-300 ease-in-out group-hover:w-full"></span>
+  </a>
+
+  <a
+    ref={cta}
+    className="relative button group hover:bg-transparent"
+    href="#contact"
+  >
+    <span className="relative w-fit">
+      <span className="absolute bottom-2 h-[0.15em] w-0 bg-zinc-400 opacity-90 duration-300 ease-out group-hover:w-full"></span>
+      <span>Let&apos;s Talk.</span>
+    </span>
+  </a>
+</nav>
+
+
+
     </header>
   );
 }
