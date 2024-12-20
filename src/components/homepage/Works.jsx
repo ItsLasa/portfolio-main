@@ -1,8 +1,9 @@
 import ibgroup from "/src/assets/images/image.png";
-import memento from "/src/assets/images/web2.png";
-import acc from "/src/assets/images/app3.jpg";
-import daddy from "/src/assets/images/app2.png";
-import sunnyside from "/src/assets/images/app4.png";
+// import memento from "/src/assets/images/web2.png";
+// import acc from "/src/assets/images/app3.jpg";
+// import daddy from "/src/assets/images/app2.png";
+// import sunnyside from "/src/assets/images/app4.png";
+import godaddy from "/src/assets/images/godaddy-desktop.webp";
 import Projects from "../ui/Projects";
 import Heading from "../ui/Heading";
 
@@ -33,10 +34,10 @@ export default function Works({ forwardedRef }) {
         <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
           <Projects
             link="#"
-            img={memento}
-            alt="memento landing page mockup"
-            name="memento studio landing page"
-            type="Frontend Development Ongoing Project"
+            img={godaddy}
+            alt="GODADDY LANDING PAGE CLONE"
+            name="GODADDY LANDING PAGE CLONE"
+            type="Frontend Development Ongoing Web Clone Project"
             year="2023"
             tools="HTML • TailwindCSS • JavaScript"
           />
