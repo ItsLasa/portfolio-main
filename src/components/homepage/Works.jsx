@@ -32,35 +32,35 @@ export default function Works({ forwardedRef }) {
         {/* Project #2 */}
         <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
           <Projects
-            link="https://mementostudio.netlify.app/"
+            link="#"
             img={memento}
             alt="memento landing page mockup"
             name="memento studio landing page"
-            type="Frontend Development"
+            type="Frontend Development Ongoing Project"
             year="2023"
             tools="HTML • TailwindCSS • JavaScript"
           />
         </div>
-        <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
+        {/* <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
           <Projects
-            link="https://realbusinessaccountants.netlify.app"
+            link="#"
             img={acc}
             alt="real business accountant project mockup"
             name="real business accountants"
-            type="Web Design • Frontend Development"
+            type="Web Design • Frontend Development Ongoing Project"
             year="2023"
             tools="HTML • CSS • JavaScript • Figma"
           />
-        </div>
-        <div className="col-span-1 pt-0 h-fit md:col-span-8 md:pt-20">
+        </div> */}
+        {/* <div className="col-span-1 pt-0 h-fit md:col-span-8 md:pt-20">
         
           <Projects
-            link="https://godaddyuiclone.netlify.app"
+            link="#"
             img={daddy}
             
             alt="godaddy clone page mockup"
             name="GODADDY LANDING PAGE CLONE"
-            type="Frontend Development"
+            type="Frontend Development Ongoing Project"
             year="2023"
             tools="HTML • TailwindCSS • JavaScript"
           />
@@ -76,7 +76,7 @@ export default function Works({ forwardedRef }) {
             tools="HTML • TailwindCSS • JavaScript"
           />
          
-        </div>
+        </div> */}
       </div>
     </section>
   );
