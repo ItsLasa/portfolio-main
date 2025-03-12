@@ -2,8 +2,9 @@ import ibgroup from "/src/assets/images/image.png";
 // import memento from "/src/assets/images/web2.png";
 // import acc from "/src/assets/images/app3.jpg";
 // import daddy from "/src/assets/images/app2.png";
-// import sunnyside from "/src/assets/images/app4.png";
-import godaddy from "/src/assets/images/godaddy-desktop.webp";
+// // import sunnyside from "/src/assets/images/app4.png";
+// import godaddy from "/src/assets/images/godaddy-desktop.webp";
+import zero from "/src/assets/images/project-2.png";
 import Projects from "../ui/Projects";
 import Heading from "../ui/Heading";
 
@@ -33,13 +34,13 @@ export default function Works({ forwardedRef }) {
         {/* Project #2 */}
         <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
           <Projects
-            link="#"
-            img={godaddy}
-            alt="GODADDY LANDING PAGE CLONE"
-            name="GODADDY LANDING PAGE CLONE"
-            type="Frontend Development Ongoing Web Clone Project"
-            year="2023"
-            tools="HTML • TailwindCSS • JavaScript"
+            link="https://github.com/ItsLasa/zero-waste"
+            img={zero}
+            alt="AI-powered Waste Management Platform"
+            name="Zero-to-Hero Waste Management"
+            type="Web Design • FullStack Development "
+            year="2024"
+            tools="Next.js • Web3 • Postgres • TailwindCSS •"
           />
         </div>
         {/* <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
