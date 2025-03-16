@@ -22,6 +22,7 @@ export default function Works({ forwardedRef }) {
         {/* Project #1 */}
         <div className="col-span-1 md:col-span-12">
           <Projects
+          className=" transition-all duration-300 ease-in-out hover:scale-105"
             link="https://github.com/ItsLasa/app_farm"
             img={ibgroup} //if you need image un comment this and remove video part 
             alt="Farm To Market Food Web"
