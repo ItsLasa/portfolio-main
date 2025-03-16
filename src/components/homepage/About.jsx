@@ -43,7 +43,7 @@ export default function About() {
           <img
             ref={profile}
             loading="lazy"
-            className="object-cover object-center w-full h-auto rounded-md aspect-square md:aspect-auto"
+            className="object-cover object-center w-full h-auto rounded-2xl aspect-square md:aspect-auto"
             src={profileImg}
             width="600"
             height="800"
