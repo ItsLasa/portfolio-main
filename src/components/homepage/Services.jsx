@@ -4,7 +4,8 @@ import IconCloudDemo from "../IconCloudDemo";
 
 export default function Services() {
   const expertiseItems = [
-    "Web Development",
+    
+    "Full-Stack Development",
     "App Development",
     "Wireframing",
     "UI/UX Design",
@@ -14,11 +15,13 @@ export default function Services() {
   const toolBoxItems = [
     "NextJs",
     "TailwindCSS",
+    "Laravel",
     "React-Native",
     "Figma",
-    "SpringBoot",
+    "Django",
     "AWS",
-    "Mysql",
+    "MySQL",
+    "PostgreSQL",
     
   ];
   // const skills=[
