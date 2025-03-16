@@ -1,6 +1,8 @@
 import ibgroup from "/src/assets/images/image.png";
-// import memento from "/src/assets/images/web2.png";
-// import acc from "/src/assets/images/app3.jpg";
+import profile1 from "/src/assets/images/3.png";
+import profile2 from "/src/assets/images/3.1.png";
+import profile3 from "/src/assets/images/4.png";
+import todo from "/src/assets/images/todo.png";
 // import daddy from "/src/assets/images/app2.png";
 // // import sunnyside from "/src/assets/images/app4.png";
 // import godaddy from "/src/assets/images/godaddy-desktop.webp";
@@ -16,7 +18,7 @@ export default function Works({ forwardedRef }) {
       className="nav-change overflow-hidden my-[10%]"
     >
      <Heading className="font-Nabla"  title="Projects" />
-      <div className="grid grid-cols-1 gap-16 mt-10 gap-y-10 md:grid-cols-12">
+      <div className="grid grid-cols-1 mt-5 md:grid-cols-12">
         {/* Project #1 */}
         <div className="col-span-1 md:col-span-12">
           <Projects
@@ -32,7 +34,8 @@ export default function Works({ forwardedRef }) {
           />
         </div>
         {/* Project #2 */}
-        <div className="col-span-1 pt-0 md:col-span-7 md:pt-16">
+        <div className="flex flex-row col-span-1 gap-4 md:col-span-12 md:pt-16">
+        <div className="col-span-1 pt-0 md:col-span-8 md:pt-16">
           <Projects
             link="https://github.com/ItsLasa/zero-waste"
             img={zero}
@@ -43,17 +46,50 @@ export default function Works({ forwardedRef }) {
             tools="Next.js • Web3 • Postgres • TailwindCSS •"
           />
         </div>
-        {/* <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
+
+        <div className="col-span-1 pt-0 md:col-span-8 md:pt-16">
+          <Projects
+            link="https://github.com/ItsLasa/zero-waste"
+            img={profile1}
+            alt="Portfolio Site 1"
+            name="Portfolio Site-1"
+            type="Web Design • Frontend Development "
+            year="2024"
+            tools="Next.js  • TailwindCSS • Material UI"
+          />
+        </div>
+        </div>
+
+        <div className="flex flex-row col-span-1 gap-4 md:col-span-12 md:pt-16">
+        <div className="col-span-2 pt-0 pl-4 md:col-span-10 md:pt-6">
           <Projects
             link="#"
-            img={acc}
-            alt="real business accountant project mockup"
-            name="real business accountants"
-            type="Web Design • Frontend Development Ongoing Project"
+            img={profile3}
+            alt="Portfolio Site 1"
+            name="Portfolio Site 2"
+            type="Web Design • Frontend Development "
             year="2023"
-            tools="HTML • CSS • JavaScript • Figma"
+            tools="Next.js• JavaScript • Figma • TailwindCSS • ShadCn"
           />
-        </div> */}
+        </div> 
+
+        <div className="col-span-1 pt-0 md:col-span-8 md:pt-16">
+          <Projects
+            link="https://github.com/ItsLasa/zero-waste"
+            img={todo}
+            alt="Todo List"
+            name="Todo App"
+            type="Web Design • Frontend Development "
+            year="2024"
+            tools="Next.js  • TailwindCSS • Toast"
+          />
+        </div>
+        </div>
+         
+
+  
+
+        
         {/* <div className="col-span-1 pt-0 h-fit md:col-span-8 md:pt-20">
         
           <Projects
