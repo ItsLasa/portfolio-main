@@ -49,7 +49,7 @@ export default function Works({ forwardedRef }) {
 
         <div className="col-span-1 pt-0 md:col-span-8 md:pt-16">
           <Projects
-            link="https://github.com/ItsLasa/zero-waste"
+            link="https://github.com/ItsLasa/profile"
             img={profile1}
             alt="Portfolio Site 1"
             name="Portfolio Site-1"
@@ -63,7 +63,7 @@ export default function Works({ forwardedRef }) {
         <div className="flex flex-row col-span-1 gap-4 md:col-span-12 md:pt-16">
         <div className="col-span-2 pt-0 pl-4 md:col-span-10 md:pt-6">
           <Projects
-            link="#"
+            link="https://github.com/ItsLasa/new_profileSite"
             img={profile3}
             alt="Portfolio Site 1"
             name="Portfolio Site 2"
@@ -75,7 +75,7 @@ export default function Works({ forwardedRef }) {
 
         <div className="col-span-1 pt-0 md:col-span-8 md:pt-16">
           <Projects
-            link="https://github.com/ItsLasa/zero-waste"
+            link="https://github.com/ItsLasa/ToDo.git"
             img={todo}
             alt="Todo List"
             name="Todo App"
