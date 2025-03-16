@@ -14,7 +14,7 @@ export default function Contact() {
   useEffect(() => {
     ScrollTrigger.create({
       trigger: contactSection.current,
-      start:"180px bottom",
+      start:"200px bottom",
 
       // markers: true,
       animation: gsap
@@ -49,7 +49,7 @@ export default function Contact() {
             Have an awesome idea? Let&apos;s bring it to life.
           </h3>
           <p ref={body} className="max-w-md mt-4 translate-y-10 opacity-0 2xl:max-w-2xl text-body-2 2xl:text-4xl text-accent-100">
-            I am currently not available for freelance work. I am accepting new projects starting from February 2022.
+            I am currently  available for freelance work. 
           </p>
           <form
             name="contact"
