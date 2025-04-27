@@ -14,7 +14,8 @@ export default function Contact() {
   useEffect(() => {
     ScrollTrigger.create({
       trigger: contactSection.current,
-      start:"200px bottom",
+      start:"100px bottom",
+
 
       // markers: true,
       animation: gsap
