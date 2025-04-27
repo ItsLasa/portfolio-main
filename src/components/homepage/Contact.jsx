@@ -14,7 +14,7 @@ export default function Contact() {
   useEffect(() => {
     ScrollTrigger.create({
       trigger: contactSection.current,
-      start:"100px bottom",
+      start:"300px bottom",
 
 
       // markers: true,
